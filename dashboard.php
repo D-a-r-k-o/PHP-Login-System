@@ -1,6 +1,9 @@
 <?php 
   define('__CONFIG__', true);
-  require_once "inc/config.php";  
+  require_once "inc/config.php";
+
+  ForceLogin();
+
 ?>
 
 <!DOCTYPE html>
@@ -17,7 +20,7 @@
 <body>
 
 <div class="uk-section uk-container">
-
+    Dashboard here; you are signed in as user: <?php echo $_SESSION['user_id']; ?>
 </div>
 
 <?php require_once "inc/footer.php"; ?>
